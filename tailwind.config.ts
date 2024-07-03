@@ -2,9 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src-app/**/*.{js,ts,jsx,tsx}", // 경로를 프로젝트 구조에 맞게 수정
   ],
   theme: {
     extend: {
@@ -17,4 +15,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
