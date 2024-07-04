@@ -26,10 +26,7 @@ const PokemonList: React.FC = () => {
     fetchPokemons();
   }, []);
 
-  if (loading)
-    return (
-      <p className="text-center text-white">오늘부터 포켓몬 불매운동 한다...</p>
-    );
+  if (loading) return <p className="text-center text-white">loading...</p>;
 
   return (
     <div className="container mx-auto p-4">

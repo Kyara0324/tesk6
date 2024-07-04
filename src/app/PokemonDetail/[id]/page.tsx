@@ -9,14 +9,6 @@ async function DetailPage({ params }: { params: { id: string } }) {
   );
   const pokemon: Pokemon = await response.data;
 
-  // const fetchPokemon = async (id: string): Promise<Pokemon> => {
-  //   const response = await axios.get(`http://localhost:3000/api/pokemons/${id}`);
-  //   return response.data;
-  // };
-
-  // const PokemonDetail = async ({ params }: { params: { id: string } }) => {
-  //   const pokemon = await fetchPokemon(params.id);
-
   console.log(pokemon);
   return (
     <div className="container mx-auto p-4">
