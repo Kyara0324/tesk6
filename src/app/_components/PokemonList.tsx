@@ -33,7 +33,7 @@ const PokemonList: React.FC = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {pokemons.map((pokemon) => (
-          <Link href={"/PokemonDetail"}>
+          <Link href={`/PokemonDetail/${pokemon.id}`}>
             <div key={pokemon.id} className="flex justify-center">
               <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg hover:scale-105 transform transition-transform cursor-pointer">
                 <img

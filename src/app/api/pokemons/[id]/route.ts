@@ -13,7 +13,6 @@ export const GET = async (
       `https://pokeapi.co/api/v2/pokemon-species/${id}`
     );
 
-    console.log(response);
     const koreanName = speciesResponse.data.names?.find(
       (name: any) => name.language.name === "ko"
     );

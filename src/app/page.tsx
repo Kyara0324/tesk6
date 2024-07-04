@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import { Pokemon } from "./types/pokemon"; // 절대 경로 사용
-import PokemonCard from "./components/PokemonCard"; // 절대 경로 사용
+import PokemonCard from "./_components/PokemonCard"; // 절대 경로 사용
 
 const PokemonList: React.FC = () => {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
