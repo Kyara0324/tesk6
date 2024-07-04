@@ -16,11 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {" "}
-        <div>포켓몬 도감</div>
-        {children}
-      </body>
+      <body className={inter.className}> {children}</body>
     </html>
   );
 }

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const TOTAL_POKEMON = 151;
+const TOTAL_POKEMON = 5;
 
 export const GET = async (request: Request) => {
   try {
@@ -17,9 +17,9 @@ export const GET = async (request: Request) => {
     );
 
     const allPokemonResponses = await Promise.all(allPokemonPromises);
-    console.log(allPokemonResponses);
+
     const allPokemonData = allPokemonResponses.map(
-      ([response, speciesResponse], index) => {
+      ([response, speciesResponse]) => {
         const koreanName = speciesResponse.data.names.find(
           (name: any) => name.language.name === "ko"
         );

@@ -7,7 +7,7 @@ type PokemonCardProps = {
 
 const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
   return (
-    <div className="bg-gray-800 text-white p-4 rounded-lg shadow-lg hover:scale-105 transform transition-transform cursor-pointer">
+    <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg hover:scale-105 transform transition-transform cursor-pointer">
       <img
         className="w-24 h-24 mx-auto mb-2"
         src={pokemon.sprites.front_default}
